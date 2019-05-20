@@ -12,8 +12,8 @@ namespace Microsoft.AspNetCore.Builder
     public static class CertificateForwarderExtensions
     {
         /// <summary>
-        /// Adds a middleware to the pipeline that will look for a base64 encoded certificate in a request header
-        /// and put that certificate on the request client certificate property.
+        /// Adds a middleware to the pipeline that will look for a certificate in a request header
+        /// decode it, and updates HttpContext.Connection.ClientCertificate.
         /// </summary>
         /// <param name="app"></param>
         /// <returns></returns>
