@@ -3313,7 +3313,7 @@ namespace Microsoft.AspNetCore.Components.Test
 
         private class MyStrongComponent : AutoRenderComponent
         {
-            [Parameter(CaptureExtraAttributes = true)] internal IDictionary<string, object> Attributes { get; set; }
+            [Parameter(CaptureUnmatchedValues = true)] internal IDictionary<string, object> Attributes { get; set; }
 
             [Parameter] internal string Text { get; set; }
 
