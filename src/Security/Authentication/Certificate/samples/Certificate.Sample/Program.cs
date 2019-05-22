@@ -18,8 +18,8 @@ namespace Certificate.Sample
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IWebHost BuildWebHost(string[] args) => null;
+/*            WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .ConfigureKestrel(options =>
                 {
@@ -28,6 +28,6 @@ namespace Certificate.Sample
                         opt.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
                     });
                 })
-                .Build();
+                .Build();*/
     }
 }
