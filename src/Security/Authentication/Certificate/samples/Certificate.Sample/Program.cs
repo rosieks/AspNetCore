@@ -37,8 +37,6 @@ namespace Certificate.Sample
                 .UseStartup<Startup>()
                 .Build();
 
-        }
-
         private static X509Certificate2 FindHttpsCertificate()
         {
             // Let's look for a localhost HTTPS server with the Server EKU and just "borrow it".
